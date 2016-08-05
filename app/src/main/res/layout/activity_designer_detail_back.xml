@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:text="擅长空间"
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/activity_designer_detail_instroduct"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="几句阿斯顿发阿斯的双方各撒旦法阿斯顿发萨芬使得发斯蒂芬顿发阿斯顿发阿斯顿符"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/activity_designer_detail_url"
+        android:text="http://www.cnblogs.com/Don/archive/"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

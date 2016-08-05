@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:state_enabled="true"
+          android:state_selected="true"
+          android:state_focused="true"
+          android:drawable="@mipmap/ic_work_p" />
+
+    <item android:state_selected="false" android:drawable="@mipmap/ic_work_n"/>
+    <item android:state_selected="true" android:drawable="@mipmap/ic_work_p"/>
+
+</selector>

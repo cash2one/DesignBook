@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--主红色-->
+    <color name="baseRed">#FFDE3031</color>
+    <!--背景灰-->
+    <color name="backgroud">#e4e3e3</color>
+    <!--分割线-->
+    <color name="divide">#E3E3E3</color>
+    <!--灰色字体-->
+    <color name="ziti">#b4b3af</color>
+    <color name="baishe">#faf9f8</color>
+    <color name="hongshe">#FFDE3031</color>
+    <color name="heishe">#0d0c0c</color>
+</resources>

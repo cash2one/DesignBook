@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+        <!--专题图片-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/iv_special"
+            android:layout_width="155dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+        />
+        <!--fresco:placeholderImage="@drawable/record_nopicture_icon"-->
+
+        <ImageView android:id="@+id/iv_division"
+                   android:layout_width="80dp"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:src="@mipmap/ic_case_hot_line"/>
+
+        <TextView android:id="@+id/tv_title1"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="13dp"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:text="10"
+                  android:shadowColor="#000000"
+                  android:shadowRadius="5"
+                  android:shadowDx="5"
+                  android:shadowDy="5"
+                  android:textColor="@android:color/white"
+                  android:layout_centerHorizontal="true"
+        />
+        <!--android:textColor="@android:color/white"-->
+
+        <TextView android:id="@+id/tv_title2"
+                  android:layout_marginTop="50dp"
+                  android:shadowColor="#ff000000"
+                  android:shadowRadius="5"
+                  android:lines="2"
+                android:maxWidth="145dp"
+                  android:shadowDx="5"
+                  android:shadowDy="5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="20"
+                  android:textColor="@android:color/white"
+                  android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

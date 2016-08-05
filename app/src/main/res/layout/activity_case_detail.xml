@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.m520it.designbook.activity.TestActivity">
+    <!--头背景图片-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+    />
+
+    <!--&lt;!&ndash;定制设计按钮&ndash;&gt;-->
+    <!--<Button android:id="@+id/btn_apply"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="申请定制设计"-->
+            <!--android:textSize="16dp"/>-->
+
+    <com.m520it.designbook.ui.MyPullToZoomScrollViewEx
+        android:id="@+id/scroll_EX"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.m520it.designbook.ui.MyPullToZoomScrollViewEx>
+    <!--顶-->
+    <include layout="@layout/head_casedetail_activity" android:id="@+id/head"/>
+
+</RelativeLayout>

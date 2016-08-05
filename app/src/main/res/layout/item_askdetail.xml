@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/riv_facepic"
+        android:layout_width="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        fresco:placeholderImage="@drawable/ic_launcher"
+        fresco:roundAsCircle="true"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/riv_facepic"
+        android:layout_alignTop="@id/riv_facepic"
+        android:text="dargon"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:text="2016-7-30"
+        android:layout_below="@id/tv_username"
+        android:layout_alignLeft="@id/tv_username"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/riv_facepic"
+        android:layout_below="@id/riv_facepic"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:text="回复"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_askdetail_praise"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_praisenum"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5dp"
+        android:background="@drawable/btn_askdetail_praise"
+        android:drawableLeft="@mipmap/ic_zan"
+        android:text="0"
+        android:drawablePadding="5dp"
+       android:layout_toLeftOf="@id/tv_response"
+        android:layout_alignTop="@id/tv_response"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

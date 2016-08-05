@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="热门推荐"
+              android:padding="10dp"
+              android:textColor="@android:color/black"
+              android:textSize="16sp"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="全部案例"
+              android:paddingRight="10dp"
+              android:drawablePadding="10dp"
+              android:drawableRight="@mipmap/ic_case_more_icon"
+              android:textSize="14sp"
+    />
+</LinearLayout>

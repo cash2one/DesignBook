@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--图库的 点击效果-->
+    <item android:state_selected="true" android:drawable="@mipmap/ic_tuku_p"/>
+    <item  android:drawable="@mipmap/ic_tuku_normal"/>
+
+</selector>

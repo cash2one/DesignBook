@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DesignBook</string>
+    <string name="designer">设计师</string>
+    <string name="city">城市</string>
+    <string name="advantage">擅长空间</string>
+    <string name="sort">综合排序</string>
+    <string name="apply_design">申请定制设计</string>
+    <string name="designBook">设计本</string>
+</resources>

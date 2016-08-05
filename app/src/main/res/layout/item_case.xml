@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+>
+    <!--主图 这是固定尺寸的-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        fresco:placeholderImage="@drawable/default_pic"
+    />
+    <!--设计师图标 这是固定尺寸的-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_designerIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv_detail"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        fresco:placeholderImage="@drawable/umeng_socialize_action_personal_selected"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="2dp"
+        fresco:roundingBorderColor="@android:color/white"
+    />
+    <!--标题-->
+    <TextView android:id="@+id/tv_name" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/iv_photo"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:text="标题"
+              android:textColor="@android:color/black"
+              android:textSize="18sp"/>
+    <!--详细-->
+    <TextView android:id="@+id/tv_detail"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv_name"
+              android:layout_marginBottom="25dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:text="详情"
+              android:textSize="14sp"/>
+</RelativeLayout>

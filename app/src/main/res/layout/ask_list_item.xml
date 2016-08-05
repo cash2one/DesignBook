@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/ask_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ask_iv"
+            android:layout_alignParentRight="true"
+            android:layout_width="89dp"
+            android:padding="5dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            fresco:placeholderImage="@drawable/default_pic_fang"
+            fresco:roundAsCircle="false"
+            />
+        <TextView
+            android:id="@+id/askcontent_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/ask_iv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/ask_iv"
+            >
+
+            <TextView
+                android:id="@+id/ask_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/ic_shijain"
+                android:drawablePadding="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/ask_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/ask_see"
+                android:clickable="true"
+
+                android:drawableLeft="@mipmap/ic_pinlun"
+                android:drawablePadding="4dp"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/ask_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/ic_chakan"
+                android:drawablePadding="4dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

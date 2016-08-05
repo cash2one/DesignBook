@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal">
+
+        <!--返回-->
+        <ImageView android:id="@+id/goback"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="15dp"
+                   android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="5dp"
+                  android:text="评论"
+                  android:textColor="@android:color/black"
+                  android:textSize="20sp"/>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/backgroud">
+        <!--抢沙发图片-->
+        <LinearLayout android:id="@+id/backgroud"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:src="@mipmap/ico_sofa"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:text="快来抢沙发!"
+                      android:textColor="@color/ziti"/>
+        </LinearLayout>
+        <!--评论列表-->
+        <ListView android:id="@+id/lv_comments"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!--评论编辑-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:padding="5dp"
+                  android:background="@color/baishe"
+                  android:layout_height="wrap_content">
+        <EditText android:layout_width="0dp"
+                  android:id="@+id/ed_comment"
+                  android:hint="添加评论"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+        />
+
+        <Button android:layout_width="wrap_content"
+                android:text="发 送"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

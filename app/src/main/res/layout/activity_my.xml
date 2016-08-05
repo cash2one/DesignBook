@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登入后的界面的 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroud"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/baseRed">
+
+        <ImageView
+            android:id="@+id/my_info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ico_my_message"/>
+
+        <RelativeLayout
+            android:id="@+id/my_qiandao"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_myhomepage02">
+
+            <TextView
+                android:id="@+id/my_qiandao_tv"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:textColor="@android:color/white"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:text="签到"/>
+
+            <ImageView
+                android:id="@+id/my_qiandao_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_huida"
+                android:layout_marginRight="8sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_touxiagn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            fresco:placeholderImage="@drawable/default_portrait"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderWidth="2dp"
+            fresco:roundingBorderColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fresco_touxiagn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="登录设计本发现更多精彩"
+            android:textColor="#fcf9f9"
+            android:textSize="15sp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/my_name"
+            android:layout_centerHorizontal="true"
+            android:background="#fcf9f9"/>
+
+        <TextView
+            android:id="@+id/my_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_name"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/view1"
+            android:text="ID43242342"
+            android:textColor="#fcf9f9"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/my_jinbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/view1"
+            android:text="金币22"
+            android:textColor="#fcf9f9"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/my_onmylnog_tv"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/my_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_myhomepage"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="修改资料"
+            android:textColor="#fcf9f9"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/xuqiu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/backgroud"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/my_shejishi_rl"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/baishe">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_shejishi"
+                android:src="@drawable/ico_my_designer"/>
+
+            <TextView
+                android:id="@+id/tv_shejishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=" 找设计师"
+                android:textColor="@color/hongshe"
+                android:textSize="19sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/my_xuqiu_rl"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/baishe">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_tijiao"
+                android:src="@drawable/ico_my_demand"/>
+
+            <TextView
+                android:id="@+id/tv_tijiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=" 提交需求"
+                android:textColor="@color/hongshe"
+                android:textSize="19sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_shouchang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_collect"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="我的收藏"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_case_more_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_wenda"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_my_qa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="我的答问"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_case_more_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_haoyou"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_my_friend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="我的好友"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_case_more_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_jinbi2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_my_gold02"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="我的金币"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_case_more_icon"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroud"/>
+
+    <RelativeLayout
+        android:id="@+id/my_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_my_set"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="设置"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_case_more_icon"/>
+    </RelativeLayout>
+
+</LinearLayout>
